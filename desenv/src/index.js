@@ -4,10 +4,9 @@ import Primeiro from './Primeiro';
 import BomDia from './BomDia';
 import { BoaNoite, BoaTarde } from './Multiplos';
 import Saudacao from './Saudacao';
+import Pai from './Pai';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <div>
-    <Saudacao nome= "Weder" tipo="Bom Dia">, </Saudacao>
-  </div>
+    <Pai nome= "João" sobrenome= "Souza"></Pai>
 )
