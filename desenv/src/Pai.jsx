@@ -1,12 +1,12 @@
-import Filho from "./Filho"
+import FilhoComProps from "./utils/util"
 
 function Pai (props){
     return(
         <div>
             <h1>{props.nome} {props.sobrenome}</h1>
+            <h2>Filhos</h2>
             <ul>
-                <Filho nome= "José" sobrenome = {props.sobrenome}></Filho>
-                <Filho nome= "Maria" sobrenome = {props.sobrenome}></Filho>
+              {<FilhoComProps dados = {props}></FilhoComProps>}
             </ul>
         </div>
     )
